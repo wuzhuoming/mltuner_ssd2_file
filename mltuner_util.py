@@ -138,13 +138,13 @@ class MLTunerUtil(object):
             intra_op_parallelism_threads=self.get_intra_op_parallelism_threads(),
             allow_soft_placement=True,
             log_device_placement=False,
-            graph_options=tf.GraphOptions(
-                optimizer_options=tf.OptimizerOptions(
+            graph_options=tf.compat.v1.GraphOptions(
+                optimizer_options=tf.compat.v1.OptimizerOptions(
                     do_common_subexpression_elimination=self.get_do_common_subexpression_elimination(),
                     do_constant_folding=True,
                     max_folded_constant_in_bytes=self.get_max_folded_constant_in_bytes(),
                     do_function_inlining=self.get_do_function_inlining(),
-                    opt_level=tf.OptimizerOptions.L0,
+                    opt_level=tf.compat.v1.OptimizerOptions.L0,
                     global_jit_level=self.get_global_jit_level()
                 ),
                 enable_bfloat16_sendrecv=self.get_enable_bfloat16_sendrecv(),
