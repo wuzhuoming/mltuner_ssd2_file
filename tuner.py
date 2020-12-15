@@ -620,7 +620,7 @@ class TFConfigUtil(object):
         self.config_sequence = [
             _ps_num,
             _intra_op_parallelism_threads,
-            _inter_op_parallelism_threads
+            _inter_op_parallelism_threads,
             _do_common_subexpression_elimination,
             _max_folded_constant_in_bytes,
             _do_function_inlining,
