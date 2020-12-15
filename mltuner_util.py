@@ -224,10 +224,10 @@ class MLTunerUtil(object):
         return int(self.conf_dict[common._KMP_AFFINITY_offset])
 
     def get_KMP_BLOCKTIME(self):
-        return int(self.conf_dict[common._KMP_BLOCKTIME])
+        return str(self.conf_dict[common._KMP_BLOCKTIME])
     
     def get_OMP_NUM_THREADS(self):
-        return int(self.conf_dict[common._OMP_NUM_THREADS])
+        return str(self.conf_dict[common._OMP_NUM_THREADS])
     
     def get_MKL_DYNAMIC(self):
         dyna = int(self.conf_dict[common._MKL_DYNAMIC])
