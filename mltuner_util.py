@@ -133,7 +133,7 @@ class MLTunerUtil(object):
         }
 
     def get_tf_session_config(self):
-        tf_config = tf.ConfigProto(
+        tf_config = tf.compat.v1.ConfigProto(
             inter_op_parallelism_threads=self.get_inter_op_parallelism_threads(),
             intra_op_parallelism_threads=self.get_intra_op_parallelism_threads(),
             allow_soft_placement=True,
