@@ -98,6 +98,7 @@ class MLTunerUtil(object):
         os.environ["KMP_BLOCKTIME"] = self.get_KMP_BLOCKTIME()
         os.environ["OMP_NUM_THREADS"] = self.get_OMP_NUM_THREADS()
         os.environ["MKL_DYNAMIC"] = self.get_MKL_DYNAMIC()
+        os.environ["KMP_SETTINGS"] = "TRUE"
         print("ZM_LOG: Done setting KMP env variable!!!!!!!!!!!")
 
         #create connection for ampq
