@@ -418,7 +418,7 @@ class TensorFlowConfigurationManager(object):
         OMP_NUM_THREADS = TensorFlowConfigMetaData(
             _OMP_NUM_THREADS,
             min_func=lambda: 1, max_func=lambda: thread_num_max_func,
-            is_integer=True, default=get_num_of_thread_func(),
+            is_integer=True,
             is_binary=True)
         self.add_config_meta_data(OMP_NUM_THREADS)
 
