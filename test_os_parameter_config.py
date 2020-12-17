@@ -12,7 +12,7 @@ list_setting = [
     # ("nasnetmobile", 1, 1, 1, 1, "dry_run",
     #  """{"ps_num": 1, "worker_num": 35, "intra_op_parallelism_threads": 0, "inter_op_parallelism_threads": 0, "n_partition": 1, "learning_rate": 0.001, "batch_size": 100, "optimizer": 2, "do_common_subexpression_elimination": 0, "max_folded_constant_in_bytes": 0, "do_function_inlining": 0, "global_jit_level": 0, "infer_shapes": 0, "enable_bfloat16_sendrecv": 0, "place_pruned_graph": 0}"""
     #  ),
-   ("NLP_imdb", 1, 1, 1, 1, "dry_run",
+   ("NLP_bert", 1, 1, 1, 1, "dry_run",
  """{"ps_num": 1, "worker_num": 35, "intra_op_parallelism_threads": 2, "inter_op_parallelism_threads": 2, "n_partition": 1, "learning_rate": 0.001, "batch_size": 100, "optimizer": 2, "do_common_subexpression_elimination": 0, "max_folded_constant_in_bytes": 0, "do_function_inlining": 0, "global_jit_level": 0, "infer_shapes": 0, "enable_bfloat16_sendrecv": 0, "place_pruned_graph": 0,"KMP_AFFINITY_granularity": 1,"KMP_AFFINITY_respect": 0,"KMP_AFFINITY_type": 1,"KMP_AFFINITY_permute": 3,"KMP_AFFINITY_offset": 0,"KMP_BLOCKTIME": 200,"OMP_NUM_THREADS": 5,"MKL_DYNAMIC": 1}""") 
    # ("NLP_imdb", 1, 1, 1, 1, "dry_run",
    #  """{"ps_num": 1, "worker_num": 35, "intra_op_parallelism_threads": 0, "inter_op_parallelism_threads": 0, "n_partition": 1, "learning_rate": 0.001, "batch_size": 100, "optimizer": 2, "do_common_subexpression_elimination": 0, "max_folded_constant_in_bytes": 0, "do_function_inlining": 0, "global_jit_level": 0, "infer_shapes": 0, "enable_bfloat16_sendrecv": 0, "place_pruned_graph": 0,""}"""
