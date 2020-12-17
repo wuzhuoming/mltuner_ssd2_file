@@ -277,6 +277,12 @@ def execute(config):
                   base_cmd,
                   python_exe,
                   home_path)
+    elif model == "NLP_bert":
+        cmd = "%s --target_loss 0.01 " \
+              "--script %s %s/selftf/tf_job/nlp/zmwu/bert_tf2/tf_bert.py" % (
+                  base_cmd,
+                  python_exe,
+                  home_path) 
     else:
         cmd = "%s --target_loss 0.2 " \
               "--script %s %s/selftf/tf_job/cnn/keras_impl/train.py --model=%s" % (
