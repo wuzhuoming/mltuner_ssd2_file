@@ -283,6 +283,12 @@ def execute(config):
                   base_cmd,
                   python_exe,
                   home_path) 
+    elif model == "wordembed_elmo":
+        cmd = "%s --target_loss 0.01 " \
+              "--script %s %s/selftf/tf_job/nlp/embeddings/elmo/tf_elmo.py" % (
+                  base_cmd,
+                  python_exe,
+                  home_path)
     else:
         cmd = "%s --target_loss 0.2 " \
               "--script %s %s/selftf/tf_job/cnn/keras_impl/train.py --model=%s" % (
