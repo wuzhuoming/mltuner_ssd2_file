@@ -283,9 +283,9 @@ def execute(config):
                   base_cmd,
                   python_exe,
                   home_path) 
-    elif model == "wordembed_elmo":
+    elif model == "NLP_lstm":
         cmd = "%s --target_loss 0.01 " \
-              "--script %s %s/selftf/tf_job/nlp/embeddings/elmo/tf_elmo.py" % (
+              "--script %s %sselftf/tf_job/nlp/zmwu/bd_lstm/train.py" % (
                   base_cmd,
                   python_exe,
                   home_path)
